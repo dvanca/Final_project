@@ -10,8 +10,21 @@ public class Apartament extends Imobil {
     private boolean balcon;
 
 
-    public Apartament(int suprafata, int pretMetruPatrat, int numarCamere, Set<Dotari> lista) {
-        super(suprafata,pretMetruPatrat,numarCamere,lista);
+    public Apartament(int suprafata, int pretMetruPatrat, int numarCamere, Set<Dotari> lista, int pretTotal) {
+        super(suprafata,pretMetruPatrat,numarCamere,lista, pretTotal);
 
+    }
+
+    @Override
+    public String toString() {
+        return "Apartament{" +
+                "etaj=" + etaj +
+                ", balcon=" + balcon +
+                ", suprafata=" + suprafata +
+                ", pretMetruPatrat=" + pretMetruPatrat +
+                ", numarCamere=" + numarCamere +
+                ", listaDotari=" + listaDotari +
+                ", pretTotal=" + pretTotal +
+                '}';
     }
 }

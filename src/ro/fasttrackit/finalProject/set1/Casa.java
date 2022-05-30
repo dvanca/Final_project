@@ -10,7 +10,9 @@ public class Casa extends Imobil {
     private int numarNiveluri;
 
 
-    public Casa(int suprafata, int pretMetruPatrat, int numarCamere, Set<Dotari> listaDotari) {
-        super(suprafata, pretMetruPatrat, numarCamere, listaDotari);
+    public Casa(int suprafata, int pretMetruPatrat, int numarCamere, Set<Dotari> listaDotari, int pretTotal, int suprafataCurte, int numarNiveluri) {
+        super(suprafata, pretMetruPatrat, numarCamere, listaDotari, pretTotal);
+        this.suprafataCurte = suprafataCurte;
+        this.numarNiveluri = numarNiveluri;
     }
 }
